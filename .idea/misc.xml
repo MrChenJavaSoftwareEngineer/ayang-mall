@@ -18,6 +18,9 @@
         <option value="$PROJECT_DIR$/ayang-ware/pom.xml" />
         <option value="$PROJECT_DIR$/renren-fast/pom.xml" />
         <option value="$PROJECT_DIR$/renren-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/ayang-fast/pom.xml" />
+        <option value="$PROJECT_DIR$/ayang-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/ayang-admin/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,3 +1,19 @@
 spring:
   application:
     name: ayang-coupon
+
+  config:
+    import:
+      - optional:nacos:ayang-coupon.yml?group=ayang-coupon&refreshEnabled=true
+      - optional:nacos:ayang-coupon-datasource.yml?group=ayang-coupon&refreshEnabled=true
+      - optional:nacos:ayang-coupon-mybatis.yml?group=ayang-coupon&refreshEnabled=true
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 3647e17d-3ba5-4b90-aba7-01b212fcff10
+
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 3647e17d-3ba5-4b90-aba7-01b212fcff10
+        group: ayang-coupon

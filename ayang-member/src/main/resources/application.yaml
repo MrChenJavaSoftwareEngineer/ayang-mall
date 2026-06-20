@@ -1,3 +1,19 @@
 spring:
   application:
     name: ayang-member
+
+  config:
+    import:
+      - optional:nacos:ayang-member.yml?group=ayang-member&refreshEnabled=true
+      - optional:nacos:ayang-member-datasource.yml?group=ayang-member&refreshEnabled=true
+      - optional:nacos:ayang-member-mybatis.yml?group=ayang-member&refreshEnabled=true
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 3647e17d-3ba5-4b90-aba7-01b212fcff10
+
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 3647e17d-3ba5-4b90-aba7-01b212fcff10
+        group: ayang-member

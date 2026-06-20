@@ -13,22 +13,33 @@
         <module name="ayang-coupon" />
         <module name="ayang-order" />
         <module name="ayang-product" />
-        <module name="renren-fast" />
+        <module name="ayang-admin" />
         <module name="renren-generator" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ayang-fast" target="17" />
+      <module name="ayang-generator" target="17" />
+      <module name="renren-fast" target="1.8" />
+      <module name="renren-fast (1) (io.renren)" target="1.5" />
+      <module name="renren-fast (2)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ayang-admin" options="-parameters" />
       <module name="ayang-common" options="-parameters" />
       <module name="ayang-coupon" options="-parameters" />
+      <module name="ayang-fast" options="-parameters" />
       <module name="ayang-gateway" options="-parameters" />
+      <module name="ayang-generator" options="-parameters" />
       <module name="ayang-mall" options="" />
       <module name="ayang-member" options="-parameters" />
       <module name="ayang-order" options="-parameters" />
       <module name="ayang-product" options="-parameters" />
       <module name="ayang-ware" options="-parameters" />
       <module name="renren-fast" options="-parameters" />
+      <module name="renren-fast (2)" options="-parameters" />
       <module name="renren-generator" options="-parameters" />
     </option>
   </component>

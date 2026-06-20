@@ -1,3 +1,44 @@
+#spring:
+#  application:
+#    name: ayang-product
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/ayang_mall_pms?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+#    username: root
+#    password: 123456
+#  cloud:
+#    nacos:
+#      discovery:
+##        enabled: false
+##      config:
+##        import-check:
+##          enabled: false
+#        server-addr: 127.0.0.1:8848
+#server:
+#  port: 10000
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  mapper-locations: classpath*:/mapper/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
 spring:
   application:
     name: ayang-product
+
+  config:
+    import:
+      - optional:nacos:ayang-product.yml?group=ayang-product&refreshEnabled=true
+      - optional:nacos:ayang-product-datasource.yml?group=ayang-product&refreshEnabled=true
+      - optional:nacos:ayang-product-mybatis.yml?group=ayang-product&refreshEnabled=true
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 3647e17d-3ba5-4b90-aba7-01b212fcff10
+
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 3647e17d-3ba5-4b90-aba7-01b212fcff10
+        group: ayang-product

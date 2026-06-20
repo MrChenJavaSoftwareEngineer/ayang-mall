@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$USER_HOME$/Desktop/src/main/java" charset="UTF-8" />
+    <file url="file://$USER_HOME$/Desktop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ayang-admin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ayang-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ayang-coupon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ayang-fast/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ayang-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ayang-generator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ayang-member/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ayang-order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ayang-product/src/main/java" charset="UTF-8" />

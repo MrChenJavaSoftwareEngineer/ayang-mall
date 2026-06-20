@@ -1,3 +1,19 @@
 spring:
   application:
     name: ayang-ware
+
+  config:
+    import:
+      - optional:nacos:ayang-ware.yml?group=ayang-ware&refreshEnabled=true
+      - optional:nacos:ayang-ware-datasource.yml?group=ayang-ware&refreshEnabled=true
+      - optional:nacos:ayang-ware-mybatis.yml?group=ayang-ware&refreshEnabled=true
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 3647e17d-3ba5-4b90-aba7-01b212fcff10
+
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 3647e17d-3ba5-4b90-aba7-01b212fcff10
+        group: ayang-ware
